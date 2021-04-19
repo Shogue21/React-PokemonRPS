@@ -1,13 +1,13 @@
 const Header = () => {
   return (
-    <nav class="header navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="/">
+    <nav className="header navbar navbar-expand-lg navbar-dark bg-dark">
+      <a className="navbar-brand" href="/">
         Pokemon Rock, Paper, Scissors
       </a>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="/description">
+      <div className="collapse navbar-collapse" id="navbarNav">
+        <ul className="navbar-nav">
+          <li className="nav-item">
+            <a className="nav-link" href="/description">
               Description
             </a>
           </li>

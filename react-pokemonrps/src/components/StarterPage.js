@@ -1,7 +1,9 @@
 const StarterPage = () => {
   return (
     <div id="starterPage">
-      <button>Play Now!</button>
+      <a href="/play">
+        <button href="/play">Play Now!</button>
+      </a>
     </div>
   );
 };

@@ -5,7 +5,7 @@ body {
   font-family: "Quicksand", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url(https://images.wallpapersden.com/image/download/pokemon-pikachu-art_a25tbW6UmZqaraWkpJRmbmdlrWZlbWU.jpg);
+  background-image: url("pikabackground.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -32,18 +32,23 @@ code {
   height: 100vh;
 }
 
-#starterPage > button {
-  margin-top: 150px;
+#starterPage > a > button {
+  margin: 85% auto;
   height: 200px;
   width: 200px;
-  background-color: red;
+  background-color: #fe5858;
   border: 2px solid yellow;
   font-size: xx-large;
   font-family: "Quicksand", sans-serif;
   color: white;
+  text-decoration: none;
 }
 
 #description {
-  -webkit-text-stroke-width: 0.25px;
-  -webkit-text-stroke-color: white;
+  background-color: white;
+  opacity: 70%;
+}
+
+.navbar-dark {
+  background-color: #585858 !important;
 }

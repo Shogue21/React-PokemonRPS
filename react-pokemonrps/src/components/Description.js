@@ -1,6 +1,6 @@
 const Description = () => {
   return (
-    <div>
+    <div id="description">
       <h3>Description</h3>
       <p>
         This is a turn based combat game that follows the core principles of
