@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Quicksand", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url(https://images.wallpapersden.com/image/download/pokemon-pikachu-art_a25tbW6UmZqaraWkpJRmbmdlrWZlbWU.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+#header {
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+}
+
+#header > h3 {
+  color: white;
+  padding: 0px;
+}
+
+#starterPage {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  height: 100vh;
+}
+
+#starterPage > button {
+  margin-top: 150px;
+  height: 200px;
+  width: 200px;
+  background-color: red;
+  border: 2px solid yellow;
+  font-size: xx-large;
+  font-family: "Quicksand", sans-serif;
+}
