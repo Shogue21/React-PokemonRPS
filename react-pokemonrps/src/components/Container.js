@@ -6,11 +6,14 @@ const Container = () => {
   const [isMiss, setIsMiss] = useState(false);
   const [isCrit, setIsCrit] = useState(false);
   const [result, setResult] = useState("");
+  const [comChoiceVar, setComChoiceVar] = useState("");
 
   // Randomly choose computer choice
   const comChoice = () => {
     const choices = ["fire", "grass", "rock", "ice", "ground"];
-    return choices[Math.floor(Math.random() * choices.length)];
+    const choice = Math.floor(Math.random() * choices.length);
+    setComChoiceVar(choices[choice]);
+    return choices[choice];
   };
   // Determine damage dealt
   const damage = () => {
@@ -44,24 +47,31 @@ const Container = () => {
   const determineWinner = (choice) => {
     const computerChoice = comChoice();
     if (choice === "fire") {
+      console.log(computerChoice);
       if (computerChoice === "fire") {
         setResult("Draw!");
+        console.log("made it.");
       } else if (computerChoice === "grass" || computerChoice === "ice") {
         setResult("You win!");
         dealDamage("com");
+        console.log("made it.");
       } else if (computerChoice === "rock" || computerChoice === "ground") {
         setResult("You lose!");
         dealDamage("player");
+        console.log("made it.");
       }
     } else if (choice === "grass") {
       if (computerChoice === "grass") {
         setResult("Draw!");
+        console.log("made it.");
       } else if (computerChoice === "rock" || computerChoice === "ground") {
         setResult("You win!");
         dealDamage("com");
+        console.log("made it.");
       } else if (computerChoice === "fire" || computerChoice === "ice") {
         setResult("You lose!");
         dealDamage("player");
+        console.log("made it.");
       }
     }
   };
@@ -81,7 +91,11 @@ const Container = () => {
         <button>Rock</button>
       </div>
       <div className="result">
-        <h3>{result}</h3>
+        {comChoiceVar && (
+          <h3>
+            The computer chose {comChoiceVar}. {result}
+          </h3>
+        )}
       </div>
     </div>
   );
