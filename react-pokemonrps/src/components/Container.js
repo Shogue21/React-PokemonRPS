@@ -80,8 +80,6 @@ const Container = () => {
       <div className="health">
         <h3>Player Health: {playerHealth}</h3>
         <h3>Computer Health: {comHealth}</h3>
-        {isCrit && <p>Crit!</p>}
-        {isMiss && <p>Miss!</p>}
       </div>
       <div className="buttons">
         <button onClick={() => determineWinner("fire")}>Fire</button>
@@ -95,6 +93,18 @@ const Container = () => {
           <h3>
             The computer chose {comChoiceVar}. {result}
           </h3>
+        )}
+        {isCrit && (
+          <p>
+            {result === "You win!"
+              ? "You got a crit!"
+              : "The computer got a crit!"}
+          </p>
+        )}
+        {isMiss && (
+          <p>
+            {result === "You win!" ? "You missed!" : "The computer missed!"}
+          </p>
         )}
       </div>
     </div>
