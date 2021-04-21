@@ -18,6 +18,14 @@ const Description = () => {
         the same type, it is a tie and neither players lose health. Once a
         player reaches 0 health, the game ends.
       </p>
+      <h3>Type Matchups</h3>
+      <ul>
+        <li>Fire -&gt; Grass/Ice</li>
+        <li>Grass -&gt; Ground/Rock</li>
+        <li>Ice -&gt; Ground/Grass</li>
+        <li>Ground -&gt; Fire/Rock</li>
+        <li>Rock -&gt; Fire/Ice</li>
+      </ul>
     </div>
   );
 };
