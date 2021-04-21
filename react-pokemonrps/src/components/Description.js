@@ -14,17 +14,37 @@ const Description = () => {
         type to use each round and the bot will do the same. Whoever has the
         winning matchup, deals 20 damage to their opponent. There is also a
         chance to miss or get a critical hit on a win. If you miss, you deal 0
-        damage. If you win, you deal double. If both players happen to choose
+        damage. |If you win, you deal double. If both players happen to choose
         the same type, it is a tie and neither players lose health. Once a
         player reaches 0 health, the game ends.
       </p>
       <h3>Type Matchups</h3>
       <ul>
-        <li>Fire -&gt; Grass/Ice</li>
-        <li>Grass -&gt; Ground/Rock</li>
-        <li>Ice -&gt; Ground/Grass</li>
-        <li>Ground -&gt; Fire/Rock</li>
-        <li>Rock -&gt; Fire/Ice</li>
+        <li>
+          <button className="fire">Fire</button> -&gt;{" "}
+          <button className="grass">Grass</button>/
+          <button className="ice">Ice</button>
+        </li>
+        <li>
+          <button className="grass">Grass</button> -&gt;{" "}
+          <button className="ground">Ground</button>/
+          <button className="rock">Rock</button>
+        </li>
+        <li>
+          <button className="ice">Ice</button> -&gt;{" "}
+          <button className="ground">Ground</button>/
+          <button className="grass">Grass</button>
+        </li>
+        <li>
+          <button className="ground">Ground</button> -&gt;{" "}
+          <button className="fire">Fire</button>/
+          <button className="rock">Rock</button>
+        </li>
+        <li>
+          <button className="rock">Rock</button> -&gt;{" "}
+          <button className="fire">Fire</button>/
+          <button className="ice">Ice</button>
+        </li>
       </ul>
     </div>
   );
