@@ -1,13 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
 
 body {
+  max-height: max-content;
   margin: 0;
   font-family: "Quicksand", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-image: url("pikabackground.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
 }
 
 code {
@@ -19,12 +20,14 @@ code {
   display: flex;
   justify-content: center;
   align-content: center;
+  max-height: 100%;
+  height: 100%;
 }
 
 #starterPage > a > button {
   margin: 85% auto;
-  height: 200px;
-  width: 200px;
+  height: 62.5%;
+  width: 125%;
   background-color: #fe5858;
   border: 2px solid yellow;
   font-size: xx-large;
