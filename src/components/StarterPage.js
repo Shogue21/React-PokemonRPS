@@ -2,7 +2,7 @@ const StarterPage = () => {
   return (
     <div id="starterPage">
       <a href="/play">
-        <button href="/play">Play Now!</button>
+        <button>Play Now!</button>
       </a>
     </div>
   );

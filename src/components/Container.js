@@ -27,11 +27,10 @@ const Container = () => {
     const crit = Math.floor(Math.random() * 8);
     if (missAtack === 1) {
       damage = 0;
-      console.log("Miss");
+
       setIsMiss(true);
     } else if (crit === 1) {
       damage = 40;
-      console.log("Crit!");
       setIsCrit(true);
     }
     return damage;
